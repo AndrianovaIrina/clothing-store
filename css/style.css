@@ -1,0 +1,405 @@
+/*Colors*/
+/*
+@bg-color:#fcfafb;
+@logo-colors: #041122;
+@nav-colors:#5c6167;
+@text-colors: #a8abae;
+@btn-color: #f72464;
+@colors-old-price: #a1a7aa;
+*/
+/*Fonts*/
+@font-face {
+font-family: 'Lora-regular';
+src: url('../fonts/Lora-Regular.eot');
+src: url('../fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lora-Regular.woff2') format('woff2'),
+    url('../fonts/Lora-Regular.woff') format('woff'),
+    url('../fonts/Lora-Regular.ttf') format('truetype'),
+    url('../fonts/Lora-Regular.svg#Lora-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lora-bold';
+src: url('../fonts/Lora-Bold.eot');
+src: url('../fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lora-Bold.woff2') format('woff2'),
+    url('../fonts/Lora-Bold.woff') format('woff'),
+    url('../fonts/Lora-Bold.ttf') format('truetype'),
+    url('../fonts/Lora-Bold.svg#Lora-Bold') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Muli-light';
+src: url('../fonts/Muli-Light.eot');
+src: url('../fonts/Muli-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli-Light.woff2') format('woff2'),
+    url('../fonts/Muli-Light.woff') format('woff'),
+    url('../fonts/Muli-Light.ttf') format('truetype'),
+    url('../fonts/Muli-Light.svg#Muli-Light') format('svg');
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Muli-regular';
+src: url('../fonts/Muli-Regular.eot');
+src: url('../fonts/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli-Regular.woff2') format('woff2'),
+    url('../fonts/Muli-Regular.woff') format('woff'),
+    url('../fonts/Muli-Regular.ttf') format('truetype'),
+    url('../fonts/Muli-Regular.svg#Muli-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Muli-bold';
+src: url('../fonts/Muli-Bold.eot');
+src: url('../fonts/Muli-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli-Bold.woff2') format('woff2'),
+    url('../fonts/Muli-Bold.woff') format('woff'),
+    url('../fonts/Muli-Bold.ttf') format('truetype'),
+    url('../fonts/Muli-Bold.svg#Muli-Bold') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Muli-SemiBold';
+src: url('../fonts/Muli-SemiBold.eot');
+src: url('../fonts/Muli-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli-SemiBold.woff2') format('woff2'),
+    url('../fonts/Muli-SemiBold.woff') format('woff'),
+    url('../fonts/Muli-SemiBold.ttf') format('truetype'),
+    url('../fonts/Muli-SemiBold.svg#Muli-SemiBold') format('svg');
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Droid Serif-bold';
+src: url('../fonts/DroidSerif-Bold.eot');
+src: url('../fonts/DroidSerif-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DroidSerif-Bold.woff2') format('woff2'),
+    url('../fonts/DroidSerif-Bold.woff') format('woff'),
+    url('../fonts/DroidSerif-Bold.ttf') format('truetype'),
+    url('../fonts/DroidSerif-Bold.svg#DroidSerif-Bold') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Droid Serif-regular';
+src: url('../fonts/DroidSerif.eot');
+src: url('../fonts/DroidSerif.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DroidSerif.woff2') format('woff2'),
+    url('../fonts/DroidSerif.woff') format('woff'),
+    url('../fonts/DroidSerif.ttf') format('truetype'),
+    url('../fonts/DroidSerif.svg#DroidSerif') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/*Базовые настройки*/
+
+html{
+font-size: 1.2rem;
+}
+body{
+font-family: 'Muli-light';
+color: #c4c4c4;
+}
+section{
+padding: 5rem 0;
+}
+h1,h2,h3,h4,h5{
+    color: #000;
+}
+a:hover{
+text-decoration: none;
+}
+button:focus, input:focus, a:focus, textarea:focus{
+outline: none;
+}
+button.btn{
+padding: 0.5rem 1rem;
+border-radius: 0.4rem;
+width: 100%;
+font-family: 'Lora-regular';
+background-color: #f72464;
+font-size: 0.8rem;
+color: #fff;
+}
+button.btn:hover{
+opacity: 0.8;
+color: #fff;
+}
+
+h1.section-header{
+font-family: 'Droid Serif-regular';
+font-size: 1.4rem;
+text-align: center;
+}
+p.section-subtitle{
+font-size: 0.5rem;
+text-align: center;
+margin-bottom: 7rem;
+}
+
+/*Navigation*/
+nav.navigation{
+margin-top: 0.5rem;
+font-size: 0.7rem;
+}
+nav.navigation .wrap-logo{
+display: table;
+width: 100%;
+height: 2rem;
+}
+nav.navigation .wrap-block.logo{
+font-family: 'Muli-SemiBold';
+font-size: 1rem;
+display: table-cell;
+vertical-align: middle;
+text-transform: uppercase;
+text-align: left;
+color: #041122;
+}
+nav.navigation .wrap-block.logo:hover{
+cursor: default;
+}
+nav.navigation .wrap-block.nav a{
+margin-left: 0.5rem;
+font-family: 'Muli-regular';
+color: #5c6167;
+}
+nav.navigation .wrap-block.nav a:hover{
+cursor: pointer;
+color: #f72464;
+}
+nav.navigation .media img{
+width: 49%;
+color: #5c6167;
+}
+nav.navigation .media .basket-icon{
+position: absolute;
+top: 30%;
+right: 43%;
+transform: scaleY(-50%);
+}
+nav.navigation .media .basket-icon span.mt-0.basket-number{
+padding: 4px 6px;	
+font-family: 'Muli-bold';
+background-color: #f72464;
+border: 1px solid #f72464;	
+border-radius: 50px;
+font-size: 0.5rem;
+color: #fff;
+}
+
+/*Section main*/
+section.main{
+min-height: 27rem;
+background: #fcfafb url(../img/main-bg.png) right 2rem top 2rem no-repeat;
+background-size: 45%;
+}
+section.main h1.main-title{
+padding-top: 2.5rem;
+font-family: 'Lora-regular';
+font-size: 3rem;
+}
+section.main p.main-subtitle{
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-size: 0.75rem;
+}
+
+/*Products*/
+section.products .products-box{
+margin-bottom: 1.5rem;
+}
+section.products .box-img{
+min-height: 18rem;
+}
+section.products .products-name{
+font-family: 'Droid Serif-regular';
+font-size: 0.8rem;
+text-align: center;
+}
+section.products .products-discount{
+font-family: 'Muli-bold';
+font-size: 0.6rem;
+text-align: center;
+color:  #f72464;
+}
+section.products .products-discount span.old-price{
+padding-right: 0.5rem;
+font-family: 'Muli-regular';
+font-size: 0.6rem;
+color: #a1a7aa;
+text-decoration: line-through;
+}
+section.products .btn-products{
+    margin-top: 2rem;
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid #f72464;
+    font-family: 'Lora-regular';
+    color: #a1a7aa;
+}
+section.products .btn-products:hover{
+    background-color: #f72464;
+    color: #fff;
+    transition: 0.6s;
+}
+
+/*Advertising*/
+section.advertising{
+    padding: 2.7rem;
+    min-height: 8rem;
+    background: url(../img/bg-advertising.jpg) center no-repeat;
+    background-size: 100%;
+}
+section.advertising .wrap-text{
+    display: table;
+}
+section.advertising .wrap-text .wrap-advertising-text{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Droid Serif-regular';
+    font-size: 2.5rem;
+    color: #fff;
+}
+section.advertising .btn-advertising{
+   text-align: right;
+   line-height: 3.6rem;
+}
+
+/*Producer*/
+section.producer{
+    padding:0;
+    margin: 0;
+    position: relative;
+    height: 8rem;
+    background: #000;
+}
+section.producer .container{
+
+    position: relative;
+    background: url(../img/producer-bg.png) center no-repeat;
+}
+
+section.producer .producer-box{
+    position: relative;
+    text-align: center;
+    height: 8rem; 
+}
+section.producer .producer-box .wrap{  /*обязательное ширина и высота*/
+    display: table;
+    width: 100%;
+    height: 8rem;
+}
+section.producer .wrap .wrap-block{
+    display: table-cell;
+    vertical-align: middle;
+}
+section.producer .producer-box img{
+    width: 80%;
+}
+
+/*Blog*/
+
+section.blog .face-box, section.blog .text-box{
+min-height: 4rem;
+margin-bottom: 1.5rem;
+}
+section.blog .text-box h4.blog-header{
+    padding-top: 1rem;
+    font-family: 'Droid Serif-regular';
+    font-size: 1.2rem;
+    color: #000;
+}
+section.blog .text-box p.blog-comment{
+    font-size: 0.9rem;
+}
+section.blog .text-box .blog-button a.blog-link{
+    font-family: 'Droid Serif-regular';
+    font-size: 1rem;    
+    text-decoration: none;
+    color: #000;
+}
+section.blog .text-box .blog-button a.blog-link:hover{
+    color: #f72464;
+}
+section.blog .face-box img.blog-face{
+    width: auto;
+    height: 100%;
+}
+
+/*Join*/
+section.join .header-join{
+    margin-top: -2rem;
+    font-family: 'Droid Serif-regular';
+    font-size: 2.2rem;
+}
+
+section.join .section-subtitle{
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 55%;    
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+section.join .join-form input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid #f72464;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    color: #c4c4c4;
+}
+
+section.join .join-form input:hover{
+    -webkit-box-shadow: 4px -7px 16px 1px rgba(247,36,100,0.65);
+    -moz-box-shadow: 4px -7px 16px 1px rgba(247,36,100,0.65);
+    box-shadow: 4px -7px 16px 1px rgba(247,36,100,0.65);
+    transition: 0.3s;
+}
+
+/*Footer*/
+footer{
+    background: #000;
+    min-height: 9rem;
+}
+footer .box-link{
+    margin-top: 1rem;
+}
+footer a.footer-link{
+    font-family: 'Muli-regular';
+    padding-left: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #c4c4c4;
+}
+footer a.footer-link:hover{
+   color: #f72464;
+   transition: 0.2s; 
+}
+footer .box-icons{
+    margin-top: 1rem;
+    text-align: center;
+}
+footer .box-icons a.link-icons{
+padding-left: 1rem;
+text-align: center;
+}
+footer .box-text{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.7rem;  
+}
